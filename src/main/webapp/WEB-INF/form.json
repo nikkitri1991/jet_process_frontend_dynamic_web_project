@@ -1,0 +1,426 @@
+{
+    "id":"",
+    "title":"Employee Registration",
+    "subTitle":"",
+    "fields":[
+        {
+            "type": "text",
+            "id": "name",
+            "name": "name",
+            "label": "Full Name",
+            "classes":"form-control",
+            "placeholder": "Enter your full name",
+            "suggestion": "",
+            "config": {
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "hidden": false
+            },
+            "options": [],
+            "value": "",
+            "htmlElement": "text",
+            "errorMessage": "",
+            "valid": false,
+            "validation": {
+                "required": true,
+                "maxLength": "",
+                "minLength": ""
+            }
+        },
+        {
+            "type": "select",
+            "id": "country",
+            "name": "country",
+            "label": "Country",
+            "classes":"form-control",
+            "placeholder": "Select Country",
+            "suggestion": "Select a country from the dropdown",
+            "config": {
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "hidden": false
+            },
+             "provider": {
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "hidden": false
+            },
+            "options": [
+                {
+                    "label": "United States",
+                    "value": "USA"
+                },
+                {
+                    "label": "India",
+                    "value": "INDIA"
+                },
+                {
+                    "label": "Canada",
+                    "value": "CANADA"
+                }
+            ],
+            "value": "",
+            "htmlElement": "select",
+            "errorMessage": "",
+            "valid": false,
+            "validation": {
+                "required": true,
+                "maxLength": "",
+                "minLength": ""
+            }
+        },
+        {
+            "type":"textarea",
+            "id":"address",
+            "name":"address",
+            "classes":"form-control",
+            "label":"Address",
+            "placeholder":"Enter your address",
+            "suggestion":"Please type here",
+            "config":{
+                "hidden":false,
+                "disabled":false,
+                "readOnly":false,
+                 "checked":false
+            },
+            
+            "value":"",
+            "htmlElement":"textarea",                
+            "errorMessage":"",
+            "valid":"",
+            "validation":{
+                "required":true,
+                "maxLength":"",
+                "minLength":""
+            }
+        },
+        {
+            "type":"number",
+            "id":"age",
+            "name":"age",
+            "classes":"form-control",
+            "label":"Age in years",
+            "placeholder":"Enter your age",
+            "suggestion":"Please enter your age",
+            "config":{
+                "hidden":false,
+                "disabled":false,
+                "readOnly":false,
+                 "checked":false
+            },
+            
+            "value":"",
+            "htmlElement":"number",                
+            "errorMessage":"",
+            "valid":"",
+            "validation":{
+                "required":true,
+                "maxLength":"",
+                "minLength":"",
+                "min":"18",
+                "max":"70"
+            }
+        },
+        {
+            "type":"date",
+            "id":"dateOfJoining",
+            "name":"dateOfJoining",
+            "classes":"form-control",
+            "label":"Date of Joining",
+            "placeholder":"Enter the date of joining",
+            "suggestion":"Please enter the date of joining",
+            "config":{
+                "hidden":false,
+                "disabled":false,
+                "readOnly":false,
+                "checked":false
+            },
+            "value":"",
+            "htmlElement":"date",                
+            "errorMessage":"",
+            "valid":"",
+            "validation":{
+                "required":true,
+                "maxLength":"",
+                "minLength":"",
+                "min":"",
+                "max":""
+            }
+        },
+        {
+            "type": "autocomplete",
+            "id": "search",
+            "name": "search",
+            "classes": "",
+            "label": "Reporting Officer",
+            "placeholder": "",
+            "suggestion": "Please agree to the terms and conditions",
+          
+            "config": {
+                "hidden": false,
+                "disabled": false,
+                "readOnly": false,
+                "checked": false
+            },
+            "value": "",
+            "htmlElement": "text",
+            "errorMessage": "",
+            "valid": "",
+            "validation": {
+                "required": true,
+                "maxLength": "",
+                "minLength": ""
+            }
+        },
+        {
+            "type": "email",
+            "id": "email",
+            "name": "email",
+            "label": "Enter Email",
+            "classes":"form-control",
+            "placeholder": "Enter your email address",
+            "suggestion": "",
+            "config": {
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "hidden": false
+            },
+            "options": [],
+            "value": "",
+            "htmlElement": "email",
+            "errorMessage": "",
+            "valid": false,
+            "validation": {
+                "required": true,
+                "maxLength": "",
+                "minLength": ""
+            }
+        },
+        {
+            "type": "password",
+            "id": "password",
+            "name": "password",
+            "label": "Enter Password",
+            "classes":"form-control",
+            "placeholder": "Enter your password",
+            "suggestion": "",
+            "config": {
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "hidden": false
+            },
+            "options": [],
+            "value": "",
+            "htmlElement": "password",
+            "errorMessage": "",
+            "valid": false,
+            "validation": {
+                "required": true,
+                "maxLength": "",
+                "minLength": ""
+            }
+        },
+        {
+            "type":"tel",
+            "id":"phone",
+            "name":"phone",
+            "classes":"form-control",
+            "label":"Enter Phone Number",
+            "placeholder":"Enter your phone number",
+            "suggestion":"",
+            "config":{
+                "hidden":false,
+                "disabled":false,
+                "readOnly":false,
+                 "checked":false
+            },
+            
+            "value":"",
+            "htmlElement":"text",                
+            "errorMessage":"",
+            "valid":"",
+            "validation":{
+                "required":true,
+                "maxLength":"10",
+                "minLength":"10"
+            }
+        },
+        {
+            "type": "month",
+            "id": "month",
+            "name": "month",
+            "classes": "form-control",
+            "label": "Month",
+            "placeholder": "",
+            "suggestion": "",
+            "config": {
+                "hidden": false,
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "min": "2018-01",
+                "max": "2024-06"
+            },
+            "options": [],
+            "value": "",
+            "htmlElement": "month",
+            "errorMessage": "",
+            "valid": "",
+            "validation": {
+                "required": true,
+                "maxLength": "",
+                "minLength": ""
+            }
+        },
+               {
+            "type": "datetime",
+            "id": "datetime",
+            "name": "datetime",
+            "label": "Datetime",
+            "placeholder": {
+                "yearPlaceholder": "yy",
+                "monthPlaceholder": "mm",
+                "dayPlaceholder": "dd",
+                "hourPlaceholder": "hh",
+                "minutePlaceholder": "mm",
+                "secondPlaceholder": "ss"
+            },
+            "suggestion": "",
+            "config": {
+                "hidden": false,
+                "disabled": {
+                    "disableCalendar": true,
+                    "disableClock": true
+                },
+                "readOnly": false,
+                "checked": false
+            },
+            "value": "2018-12-25 23:0:55",
+            "htmlElement": "datetime",
+            "errorMessage": "",
+            "valid": "",
+            "validation": {
+                "required": false,
+                "maxLength": "",
+                "minLength": "",
+                "maxDate": "",
+                "minDate": "",
+                "format": "dd-MM-yy h:mm:ss a"
+            }
+        },
+        {
+            "type":"file",
+            "id":"resume",
+            "name":"resume",
+            "classes":"form-control",
+            "label":"Resume",
+            "placeholder":"Upload your resume",
+            "suggestion":"Please upload your resume",
+            "config":{
+                "accept":"application/pdf",
+                "hidden":false,
+                "disabled":false,
+                "readOnly":false,
+                "checked":false
+            },
+            "multiple":false,
+            "value":"",
+            "htmlElement":"file",                
+            "errorMessage":"",
+            "valid":"",
+            "validation":{
+                "required":true,
+                "maxLength":"",
+                "minLength":""
+            }
+        },
+        {
+            "type":"radio",
+            "id":"gender",
+            "name":"gender",
+            "classes":"form-check-input",
+            "label":"Gender",
+            "placeholder":"",
+            "suggestion":"",
+            "options":[
+                {
+                    "id":"male",
+                    "label":"Male",
+                    "value":"MALE"
+                },
+                {
+                    "id":"female",
+                    "label":"Female",
+                    "value":"FEMALE"
+                },
+                {
+                    "id":"other",
+                    "label":"Other",
+                    "value":"OTHER"
+                }
+            ]
+           },
+        {
+            "type":"checkbox",
+            "id":"termsAndConditions",
+            "name":"termsAndConditions",
+            "classes":"form-check-input",
+            "label":"I accept the terms and conditions",
+            "placeholder":"",
+            "suggestion":"Please agree to the terms and conditions",
+            "config":{
+                "hidden":false,
+                "disabled":false,
+                "readOnly":false,
+                "checked":false
+            },
+             "provider": {
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "hidden": false
+            },
+            "value":"",
+            "htmlElement":"checkbox",                
+            "errorMessage":"",
+            "valid":"",
+            "validation":{
+                "required":true,
+                "maxLength":"",
+                "minLength":""
+            }
+        },
+        {
+            "type":"otp",
+            "id":"otp",
+            "name":"otp",
+            "classes":"spin-button-none",
+            "label":"OTP",
+            "placeholder":"",
+            "suggestion":"Please agree to the terms and conditions",
+            "config":{
+                "hidden":false,
+                "disabled":false,
+                "readOnly":false,
+                "checked":false
+            },
+            "isInputNum":true,
+            "shouldAutoFocus":true,
+            "numInputs":"6",
+            "value":"",
+            "htmlElement":"text",                
+            "errorMessage":"",
+            "valid":"",
+            "validation":{
+                "required":true,
+                "maxLength":"",
+                "minLength":""
+            }
+        }
+    ]
+}
