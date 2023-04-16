@@ -37,6 +37,13 @@
 					<jsp:include page="WEB-INF/components/date.jsp">
 						<jsp:param value="<%=jsonObj%>" name="jsonObj" />
 					</jsp:include>
+					
+					<%
+					} else if (elementType.equals("dateTime")) {
+					%>
+					<jsp:include page="WEB-INF/components/date-time.jsp">
+						<jsp:param value="<%=jsonObj%>" name="jsonObj" />
+					</jsp:include>
 
 					<%
 					} else if (elementType.equals("checkbox")) {
