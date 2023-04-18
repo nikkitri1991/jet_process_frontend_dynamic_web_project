@@ -9,6 +9,7 @@
    String postRequest =(String)jsonObj.get("type");
    String url =(String)jsonObj.get("url");
    String value =(String)jsonObj.get("value");
+ 
    
    %>
 <input type="submit" id="<%=name %>" name="<%=name %>" class = "<%= cssClass%>" value = "<%=value%>">

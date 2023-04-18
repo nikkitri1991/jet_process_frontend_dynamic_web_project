@@ -16,7 +16,7 @@
      String max = (String)validation.get("minLength");
      boolean required = (boolean)validation.get("required");
      String value =(String)jsonObj.get("value");
-     System.out.print("value" +value);
+    
   %>
 
 <% if (value.equals(" ")){
@@ -24,13 +24,13 @@
 
 <input class="form-control" type="text" id="<%=name %>"
 	name="<%=name %>" placeholder=" <%=name %>" required="<%=required %>"
-	min=3 max=5>
+	>
 <% } else {
 		 
 	 %>
 <input class="form-control" type="text" id="<%=name %>"
 	name="<%=name %>" placeholder=" <%=name %>" value="<%=value %>"
-	required="<%=required %>" min=3 max=5>
+	required="<%=required %>" >
 
 
 <% }%>

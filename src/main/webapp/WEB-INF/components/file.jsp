@@ -17,7 +17,7 @@ if(value.equals(" ")){
 	%>
 	
 <input type="file" class="form-control" id="<%=name%>"
-	name="<%=name%>" placeholder="<%=name%>"/>" />
+	name="<%=name%>" placeholder="<%=name%>"/>"
 <%} else{ %>
 
 <input type="file" class="form-control" id="<%=name%>"

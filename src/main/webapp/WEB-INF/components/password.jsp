@@ -4,7 +4,7 @@
 
 
 <%
-String ob = request.getParameter("mapValueObj");
+String ob = request.getParameter("jsonObj");
 JSONObject jsonObj = new JSONObject(ob);
 String name = (String) jsonObj.get("name");
 String errorMessage = (String) jsonObj.get("errorMessage");

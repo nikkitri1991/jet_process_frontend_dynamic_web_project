@@ -8,6 +8,7 @@
 	<div class="row">
 		<div class="col-md-6  offset-md-4  ">
 			<div class="card p-3">
+			
 				<%
 				LinkedHashMap<String, String> formDefinition = (LinkedHashMap<String, String>) request.getAttribute("formDefinition");
 				Set<String>Keys = formDefinition.keySet();
@@ -15,9 +16,17 @@
 					String value=formDefinition.get(key);
 					JSONObject jsonObj = new JSONObject(value);
 					String elementType = (String) jsonObj.get("type");
+					JSONObject configuration = (JSONObject)jsonObj.get("config");
+					boolean isHidden = (boolean)configuration.get("hidden");
 				%>
-				<div class="form-group">
+					<div class="form-group">
+					<% 
+						if(!isHidden){
+					%>
+					
 					<label><%=jsonObj.get("label")%></label>
+					<%}%>
+					
 					<%
 					if (elementType.equals("textarea")) {
 					%>
@@ -150,12 +159,14 @@
 		return object;
 	}
 
-	$("#forms").submit(function(e) {
-		e.preventDefault();
+	$("#forms").submit(function(pre) {
+		alert("test");
+		
 		var form = $("#forms")[0];
 		var formElement = formSerialize(form);
 		var stringifyForm = JSON.stringify(formElement);
 		console.log(stringifyForm);
+		pre.preventDefault();
 		$.ajax({
 			type : postRequest,
 			url : url,
