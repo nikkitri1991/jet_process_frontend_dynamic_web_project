@@ -1,0 +1,193 @@
+{
+    "id":"",
+    "title":"FILE CREATED LIST",
+    "subTitle":"",
+    "fields":[
+    	{
+            "type": "text",
+            "id": "type",
+            "name": "type",
+            "label": "Type",
+            "classes":"form-control",
+            "suggestion": "",
+            "config": {
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "hidden": false
+            },
+            "options": [],
+            "value": "A",
+            "htmlElement": "text",
+            "errorMessage": "",
+            "valid": false
+            
+          },
+          {
+            "type": "text",
+            "id": "fileNo",
+            "name": "fileNo",
+            "label": "FileNo",
+            "classes":"form-control",
+            "suggestion": "",
+            "config": {
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "hidden": false
+            },
+            "options": [],
+            "value": "E101",
+            "htmlElement": "text",
+            "errorMessage": "",
+            "valid": false
+       
+            
+          },
+          {
+            "type": "text",
+            "id": "subject",
+            "name": "subject",
+            "label": "Subject",
+            "classes":"form-control",
+            "suggestion": "",
+            "config": {
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "hidden": false
+            },
+            "options": [],
+            "value": "This file is for data validation",
+            "htmlElement": "text",
+            "errorMessage": "",
+            "valid": false
+     
+            
+          },
+          {
+            "type": "text",
+            "id": "category",
+            "name": "category",
+            "label": "Category",
+            "classes":"form-control",
+            "suggestion": "",
+            "config": {
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "hidden": false
+            },
+            "options": [],
+            "value": "DTYpe",
+            "htmlElement": "text",
+            "errorMessage": "",
+            "valid": false
+            
+          },
+          {
+            "type": "text",
+            "id": "remarks",
+            "name": "remarks",
+            "label": "Remarks",
+            "classes":"form-control",
+            "suggestion": "",
+            "config": {
+                "disabled": false,
+                "readOnly": false,
+                "checked": false,
+                "hidden": false
+            },
+            "options": [],
+            "value": "verygood",
+            "htmlElement": "text",
+            "errorMessage": "",
+            "valid": false
+            
+          },
+           {
+            "type": "datetime",
+            "id": "createDate",
+            "name": "createDate",
+            "label": "CreatedOn",
+            "placeholder": {
+                "yearPlaceholder": "yy",
+                "monthPlaceholder": "mm",
+                "dayPlaceholder": "dd",
+                "hourPlaceholder": "hh",
+                "minutePlaceholder": "mm",
+                "secondPlaceholder": "ss"
+            },
+            "suggestion": "",
+            "config": {
+                "hidden": false,
+                "disabled": {
+                    "disableCalendar": true,
+                    "disableClock": true
+                },
+                "readOnly": false,
+                "checked": false
+            },
+            "value": "14-11-2022 14:10 ",
+            "htmlElement": "datetime",
+            "errorMessage": "",
+            "valid": ""
+            
+        }
+          
+          
+            ],
+            "actions": [
+			{
+				"name": "update",
+				"type": "submit",
+				"label": "Update",
+				"applyto": ""
+			},
+			{
+				"name": "save",
+				"type": "submit",
+				"label": "Save",
+				"applyto": ""
+			},
+			{
+				"name": "delete",
+				"type": "submit",
+				"label": "Delete",
+				"applyto": ""
+			}
+		],
+		"urls": [
+			{
+				"type": "POST",
+				"id": "save",
+				"name": "save",
+				"label": "",
+				"url": "http://localhost:8081/api/v1/user"
+			},
+			{
+				"type": "GET",
+				"id": "get",
+				"name": "get",
+				"label": "",
+				"url": ""
+			},
+			{
+				"type": "PUT",
+				"id": "put",
+				"name": "put",
+				"label": "",
+				"url": ""
+			},
+			{
+				"type": "DELETE",
+				"id": "delete",
+				"name": "delete",
+				"label": "",
+				"url": ""
+			}
+			
+		]
+   }
+   
+   
